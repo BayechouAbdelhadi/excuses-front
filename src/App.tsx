@@ -30,14 +30,17 @@ function App() {
     loadExcuses();
   },[])
 
-  return (<Router>
-          <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/:code" element={<ExcuseDetail />} />
-              <Route path="/Lost" element={<Lost />} />
-              <Route  element={<NotFound />} />
-          </Routes>
-        </Router>
+  return (
+  <Router>
+    <div className="h-100 w-100">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/:code" element={<ExcuseDetail />} />
+        <Route path="/Lost" element={<Lost />} />
+        <Route  element={<NotFound />} />
+      </Routes>
+    </div>       
+  </Router>
     
   );
 }
