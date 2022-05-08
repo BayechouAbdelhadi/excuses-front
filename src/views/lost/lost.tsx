@@ -13,7 +13,6 @@ export default function Lost() {
       <div className="lost-message mt-5">
           <h1 className="text-danger text-center">I amlost</h1>
           <img src={process.env.PUBLIC_URL + "/img/john-travolta-lost.gif"} alt="loading..." />
-
       </div>    
   )
 }

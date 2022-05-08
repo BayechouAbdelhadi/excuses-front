@@ -35,9 +35,9 @@ function App() {
     <div className="h-100 w-100">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/:code" element={<ExcuseDetail />} />
-        <Route path="/Lost" element={<Lost />} />
-        <Route  element={<NotFound />} />
+        <Route path="/excuses/:code" element={<ExcuseDetail />} />
+        <Route path="/lost" element={<Lost />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>       
   </Router>

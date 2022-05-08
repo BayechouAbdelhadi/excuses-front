@@ -1,4 +1,4 @@
-import  { useEffect } from 'react';
+import { useEffect } from 'react';
 import { useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 import { selectByHttpCode } from "../../redux/selectors";
@@ -9,8 +9,8 @@ export default function ExcuseDetail() {
     const selectedExuse = useSelector(selectByHttpCode(code));
     
     useEffect(()=>{
-        if(selectedExuse === undefined){
-            navigate("/lost")
+        if(selectedExuse === undefined && code !=="lost"){
+            navigate("*")
         }
     },[selectedExuse])
 
