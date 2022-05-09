@@ -1,5 +1,5 @@
 export  default interface Excuse {
     http_code: number;
-    tags:string;
+    tag:string;
     message:string;
 }
