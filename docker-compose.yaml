@@ -1,0 +1,6 @@
+version: '3'
+services:
+  backend:
+    image: abdelbayechou/excuses-back:master-0d9ca4e
+    ports:
+      - "8080:8080"
